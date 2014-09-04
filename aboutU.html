@@ -1,0 +1,82 @@
+<!--==============================
+|Gerald Fletcher - C06414401     |
+|Webelevate 3.0                  |
+|Introduction to Web Programming |
+|HTML Assignment                 |
+|Due Date: 2014/02/05            |
+===============================-->
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/JustU.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+      
+  </head>
+
+  <body id="AboutU">
+
+    <!--Navbar fixed to the top-->
+    <nav role="navigation" class="navbar navbar-custom navbar-fixed-top">
+      <!-- For mobile devices -->
+      <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+          <span class="glyphicon glyphicon-plus"></span>
+        </button>
+          <a href="login.html" class="navbar-brand">JustU</a>
+      </div>
+      <!-- Navbar links -->
+      <div id="navbarCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="logIn.html">Login</a></li>
+          <li class="active"><a href="aboutU.html">AboutU</a></li>
+          <li><a href="security.html">Security</a></li>
+          <li><a href="termsAndConditions.html">Terms and Conditions</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="page-header">
+          <h1>All AboutU <small>Tell us a little bit about yourself.</small></h1>
+      </div>
+
+        <div class="row">
+          <div class="col-md-4"><img src="images/empty_profile_picture.jpg" alt="Your Picture Here"  data-toggle="tooltip" data-placement="left" title="This is where your photo goes."></div>
+          <div class="col-md-8">
+            <form role="form"><!--Form for AboutU page-->
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+              </div>
+              <div class="form-group">
+                <label for="secondName">Surname</label>
+                <input type="text" class="form-control" id="secondName" placeholder="Enter Surname">
+              </div>
+              <div class="form-group">
+                <label for="Age">Your Age</label>
+                <input type="text" class="form-control" id="Age" placeholder="Enter Your Age">
+              </div>
+              <div class="form-group">
+                <label for="birthday">Your Birthday</label>
+                <input type="text" class="form-control" id="birthday" placeholder="Enter Your Birthday">
+              </div>
+                <label>Gender: Male <input type="radio" name= "gender" value="male"/> Female <input type="radio"name="gender" value="female"/></label></br>
+                <label>A Bit About Yourself: </label>
+              <textarea class="form-control" rows="4"></textarea></br>
+              <div class="col-md-6"><!--Buttons for saving/dismissing changes-->
+                <button type="button" class="btn btn-primary btn-info btn-sm btn-block" data-toggle="tooltip" data-placement="bottom" title="Click here to save the changes" id="SaveChangesButton">Save changes</button>
+              </div>
+              <div class="col-md-6">
+                  <button type="button" class="btn btn-info btn-default btn-sm btn-block" data-toggle="tooltip" data-placement="bottom" title="Click here to dismiss the changes" id="DismissChangesButton">Dismiss changes</button>
+              </div>
+            </form><!--End Form-->
+          </div>
+        </div>
+    </div>
+    
+  </body>
+</html>

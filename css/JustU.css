@@ -1,0 +1,118 @@
+/*================================
+|Gerald Fletcher - C06414401     |
+|Webelevate 3.0                  |
+|Introduction to Web Programming |
+|HTML Assignment                 |
+|Due Date: 2014/02/05            |
+================================*/
+
+/* Borrowed nave bar colour generator from http://bootstrap3-menu.codedorigin.com/#sthash.ObBTnpbJ.dpbs
+This was just so I could implement the colour scheme for the app that we are working on in UXD. Hexadecimal numbers were entered by myself. */
+.navbar-custom { background-color: #33847C}
+
+.navbar-custom .navbar-nav>.active>
+  a:hover,.navbar-custom .navbar-nav> 
+    li>
+      a:hover, .navbar-custom .navbar-nav>
+        li>
+          a:focus { background-color: #CCE7DE}
+
+.navbar-custom .navbar-nav>.active>
+  a,.navbar-custom .navbar-nav>.open>
+  a,.navbar-custom .navbar-nav>.open>
+  a, .navbar-custom .navbar-nav>.open>
+  a:hover,.navbar-custom .navbar-nav>.open>
+  a, .navbar-custom .navbar-nav>.open>
+  a:hover, .navbar-custom .navbar-nav>.open>
+  a:focus { background-color: #46BEAD}
+
+.navbar-custom { border-color: #46BEAD}
+.navbar-custom .navbar-brand { color: #333333}
+.navbar-custom .navbar-brand:hover { color: #999999}
+.navbar-custom .navbar-nav>
+  li>
+    a { color: #999999}
+
+.navbar-custom .navbar-nav>
+  li>
+    a:hover, .navbar-custom .navbar-nav>
+      li>
+        a:focus { color: #333333}
+.navbar-custom .navbar-nav>.active>
+  a,.navbar-custom .navbar-nav>.open>
+  a, .navbar-custom .navbar-nav>.open>
+  a:hover, .navbar-custom .navbar-nav>.open>
+  a:focus { color: #333333}
+
+.navbar-custom .navbar-nav>.active>
+  a:hover, .navbar-custom .navbar-nav>.active>
+  a:focus { color: #666666} /* End of borrowed code */
+
+/*So the nav bar dosnt get int the way of the page*/
+.container {
+  padding-top: 72px;
+}
+
+/*Background colour for the accordian*/
+#JustUTitle { background-color: #33847C}
+#FacebookTitle { background-color: #3B5998}
+#TwitterTitle { background-color: #55ACEE}
+#YouTubeTitle { background-color: #E52D27}
+#LinkedInTitle { background-color: #4875B4}
+#PintrestTitle { background-color: #B31217}
+#VimeoTitle { background-color: #86B32D}
+
+/*Background colour for the accordian*/
+#collapseJustU { background-color: #33847C}
+#collapseFacebook { background-color: #3B5998}
+#collapseTwitter { background-color: #55ACEE}
+#collapseYouTube { background-color: #E52D27}
+#collapseLinkedIn { background-color: #4875B4}
+#collapsePintrest { background-color: #B31217}
+#collapseVimeo { background-color: #86B32D}
+
+/*Background colour for the site*/
+#Login { background-color: #DDDDDD}
+#AboutU { background-color: #DDDDDD}
+#Security { background-color: #DDDDDD}
+#TermsAndConditions { background-color: #DDDDDD}
+
+/*Background colour for the buttons in AboutU.html and mobile*/
+#SaveChangesButton {background-color: #44BEAD}
+#DismissChangesButton {background-color: #33847C}
+#navbarButton {background-color: #46BEAD}
+#SecurityButton {background-color: #33847C}
+
+#PrivacyStatement {background-color: #44BEAD}
+#LegalRequirements {background-color: #44BEAD}
+#Disclaimer {background-color: #44BEAD}
+
+/*active tab color*/
+#tabColors > li.active > a,
+#tabColors > li.active > a:hover,
+#tabColors > li.active > a:focus {
+  color: #333333;
+  background-color: #44BEAD;
+}
+
+/*inactive tab color*/
+#PrivacyStatementColor {
+  color: #999999;
+  background-color: #33847C;
+}
+
+/*inactive tab color*/
+#LegalRequirementsColor {
+  color: #999999;
+  background-color: #33847C;
+}
+
+/*inactive tab color*/
+#DisclaimerColor {
+  color: #999999;
+  background-color: #33847C;
+}
+
+/*to make the input boxes 300px long*/
+#firstName {width: 300px}
+#password {width: 300px}

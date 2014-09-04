@@ -1,0 +1,313 @@
+<!--==============================
+|Gerald Fletcher - C06414401     |
+|Webelevate 3.0                  |
+|Introduction to Web Programming |
+|HTML Assignment                 |
+|Due Date: 2014/02/05            |
+===============================-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/JustU.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+   
+  </head>
+
+  <body id="Login">
+
+    <!--Navbar fixed to the top-->
+    <nav role="navigation" class="navbar navbar-custom navbar-fixed-top" >
+      <!-- For moblie devices -->
+      <div class="navbar-header">
+        <button id="navbar" type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="glyphicon glyphicon-plus"></span>
+        </button>
+          <a href="login.html" class="navbar-brand">JustU</a>
+      </div>
+        <!-- Navbar links -->
+      <div id="navbarCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="logIn.html">Login</a></li>
+          <li><a href="aboutU.html">AboutU</a></li>
+          <li><a href="security.html">Security</a></li>
+          <li><a href="termsAndConditions.html">Terms and Conditions</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--Start of the accordian-->
+    <div class="container">
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading" id="JustUTitle">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseJustU">
+                <h4>JustU</h4>
+              </a>
+            </h4>
+          </div>
+          <div id="collapseJustU" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <h4>JustU Log In: </h4><br/>
+                <form role="form"><!--Form for the user input in JustU-->
+                  <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                  </div>
+                  <button type="button" class="btn btn-default btn-sm" id="LogInButton" data-toggle="modal" data-target="#JustUModal">Log In</button>
+                </form><!--End JustU Form-->
+            </div>
+            <div class="modal fade" id="JustUModal"><!--Modal for sign in message for JustU-->
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Congratulations!</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>You have sucessfully signed into JustU!</p>
+                  </div>
+                </div>
+              </div>
+            </div><!--End JustU Modal-->
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" id="FacebookTitle">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFacebook">
+                <h4>Facebook</h4>
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFacebook" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h4>Facebook Log In: </h4><br/>
+                <form role="form"><!--Form for the user input in Facebook-->
+                  <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                  </div>
+                  <button type="button" class="btn btn-default btn-sm" id="LogInButton" data-toggle="modal" data-target="#FacebookModal">Log In</button>
+                </form><!--End Facebook Form-->
+            </div>
+            <div class="modal fade" id="FacebookModal"><!--Modal for sign in message for Facebook-->
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Congratulations!</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>You have sucessfully signed into Facebook!</p>
+                  </div>
+                </div>
+              </div>
+            </div><!--End Facebook Modal-->
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" id="TwitterTitle">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwitter">
+                <h4>Twitter</h4>
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwitter" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h4>Twitter Log In: </h4><br/>
+                <form role="form"><!--Form for the user input in Twitter-->
+                  <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                  </div>
+                  <button type="button" class="btn btn-default btn-sm" id="LogInButton" data-toggle="modal" data-target="#TwitterModal">Log In</button>
+                </form><!--End Twitter Form-->
+            </div>
+            <div class="modal fade" id="TwitterModal"><!--Modal for sign in message for Twitter-->
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Congratulations!</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>You have sucessfully signed into Twitter!</p>
+                  </div>
+                </div>
+              </div>
+            </div><!--End Twitter Modal-->
+          </div>
+        </div>
+          <div class="panel panel-default">
+          <div class="panel-heading" id="YouTubeTitle">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseYouTube">
+                <h4>YouTube</h4>
+              </a>
+            </h4>
+          </div>
+          <div id="collapseYouTube" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h4>YouTube Log In: </h4><br/>
+                <form role="form"><!--Form for the user input in Youtube-->
+                  <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                  </div>
+                  <button type="button" class="btn btn-default btn-sm" id="LogInButton" data-toggle="modal" data-target="#YouTubeModal">Log In</button>
+                </form><!--End YouTube Form-->
+            </div>
+            <div class="modal fade" id="YouTubeModal"><!--Modal for sign in message for YouTube-->
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Congratulations!</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>You have sucessfully signed into Youtube!</p>
+                  </div>
+                </div>
+              </div>
+            </div><!--End YouTube Modal-->
+          </div>
+        </div>
+          <div class="panel panel-default">
+          <div class="panel-heading" id="LinkedInTitle">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseLinkedIn">
+                <h4>LinkedIn</h4>
+              </a>
+            </h4>
+          </div>
+          <div id="collapseLinkedIn" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h4>LinkedIn Log In: </h4><br/>
+                <form role="form"><!--Form for the user input in LinkedIn-->
+                  <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                  </div>
+                  <button type="button" class="btn btn-default btn-sm" id="LogInButton" data-toggle="modal" data-target="#LinkedInModal">Log In</button>
+                </form><!--End LinkedIn Form-->
+            </div>
+            <div class="modal fade" id="LinkedInModal"><!--Modal for sign in message for LinkedIn-->
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Congratulations!</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>You have sucessfully signed into LinkedIn!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="panel panel-default">
+          <div class="panel-heading" id="PintrestTitle">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapsePintrest">
+                <h4>Pintrest</h4>
+              </a>
+            </h4>
+          </div>
+          <div id="collapsePintrest" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h4>Pintrest Log In: </h4><br/>
+                <form role="form"><!--Form for the user input in Pintrest-->
+                  <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                  </div>
+                  <button type="button" class="btn btn-default btn-sm" id="LogInButton" data-toggle="modal" data-target="#PintrestModal">Log In</button>
+                </form><!--End Pintrest Form-->
+            </div>
+            <div class="modal fade" id="PintrestModal"><!--Modal for sign in message for Pintrest-->
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Congratulations!</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>You have sucessfully signed into Pintrest!</p>
+                  </div>
+                </div>
+              </div>
+            </div><!--End Pintrest Modal-->
+          </div>
+        </div>
+          <div class="panel panel-default">
+          <div class="panel-heading" id="VimeoTitle">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseVimeo">
+                <h4>Vimeo</h4>
+              </a>
+            </h4>
+          </div>
+          <div id="collapseVimeo" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h4>Vimeo Log In: </h4><br/>
+                <form role="form"><!--Form for the user input in Vimeo-->
+                  <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                  </div>
+                  <button type="button" class="btn btn-default btn-sm" id="LogInButton" data-toggle="modal" data-target="#VimeoModal">Log In</button>
+                </form><!--End Vimeo Form-->
+            </div>
+            <div class="modal fade" id="VimeoModal"><!--Modal for sign in message for Vimeo-->
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Congratulations!</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>You have sucessfully signed into Vimeo!</p>
+                  </div>
+                </div>
+              </div>
+            </div><!--End Vimeo Modal-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
